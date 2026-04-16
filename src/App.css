@@ -1,38 +1,62 @@
+body {
+  background-color: #0881a3;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 20px;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fffdfb;
+  font-size: 90px !important;
+}
+
+.form-inline {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-control {
+  width: 500px !important;
+  color: #0881a3 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control::placeholder {
+  color: #0881a3;
+}
+
+.btn {
+  background-color: #0881a3;
+  color: #fffdfb;
+}
+
+.btn .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -50;
+  opacity: 70%;
+}
+
+.footer {
+  color: #fffdfb;
+  padding: 20px;
+  font-weight: 100 !important;
+  background-color: rgba(8, 129, 163, 0.35);
+  border-radius: 5px;
+  max-width: 100%;
 }
