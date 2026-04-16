@@ -1,15 +1,20 @@
 import React from "react";
+import WordResult from "./WordResult";
+import ExtraResults from "./ExtraResults";
 
 export default function Result() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-8 bg-primary ">Big space</div>
-        <div className="col-4 d-flex flex-column ">
-          <div className="row1 flex-fill bg-secondary mb-2">small space</div>
-          <div className="row2 flex-fill bg-success mb-2">small space</div>
-          <div className="row3 flex-fill bg-danger">small space</div>
+    <div className="container mt-5">
+      <div className="row mb-2">
+        <div className="col-8 word-container rounded ">
+          <WordResult />
         </div>
+        <ExtraResults />
+      </div>
+      <div className="row justify-content-around gap-2">
+        <div className="col-sm">image</div>
+        <div className="col-sm ">image</div>
+        <div className="col-sm">image</div>
       </div>
     </div>
   );

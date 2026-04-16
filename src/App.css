@@ -3,7 +3,7 @@ body {
 }
 
 .App {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
 }
 
@@ -17,6 +17,7 @@ body {
 h1 {
   color: #fffdfb;
   font-size: 90px !important;
+  font-weight: 900;
 }
 
 .form-inline {
@@ -55,8 +56,68 @@ video {
 .footer {
   color: #fffdfb;
   padding: 20px;
-  font-weight: 100 !important;
   background-color: rgba(8, 129, 163, 0.35);
   border-radius: 5px;
   max-width: 100%;
+}
+
+.word-container {
+  background-color: rgba(253, 233, 223, 0.9);
+}
+
+.col-4 {
+  padding-right: 0 !important;
+}
+
+.synonyms-container {
+  background-color: rgba(255, 253, 251, 0.9);
+}
+
+.antonyms-container {
+  background-color: rgba(8, 129, 163, 0.9);
+}
+
+.utilities-container {
+  background-color: rgba(255, 214, 164, 0.87);
+}
+
+.category,
+.pronunciation {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.searched-word {
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.meaning {
+  font-size: 23px;
+}
+
+.extra-title {
+  font-size: 20px;
+}
+
+.extra-content {
+  font-size: 18px;
+  text-align: center;
+}
+
+.bg1 {
+  background-color: rgba(8, 129, 163, 0.1);
+}
+
+.bg2 {
+  background-color: rgba(255, 214, 164, 0.15);
+}
+.bg3 {
+  background-color: rgba(255, 253, 251, 0.3);
 }

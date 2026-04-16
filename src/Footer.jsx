@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer container fixed-bottom ">
-      <div className="row">
-        <div className="col-sm">
+    <div className="container fixed-bottom footer">
+      <div className="row ">
+        <div className="col-sm ">
           <strong>About this page</strong> <br />
           This dictionary app helps users find definitions, synonyms and
           antonyms quickly. <br />
@@ -20,7 +20,7 @@ export default function Footer() {
           <br />
         </div>
         <div className="col-sm">
-          <strong>Find more in</strong>
+          <strong>Find more </strong>
           <br />
           <ul>
             <li>GitHub</li>
