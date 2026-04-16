@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Dictionary() {
+  let [keyword, setKeyword] = useState("");
+
+  function search(event) {
+    event.preventDefault();
+    alert(`Searching for ${keyword}`);
+  }
+
+  function handleKeywordChange(event) {
+    setKeyword(event.target.value);
+  }
+
   return (
-    <form className="form-inline ">
-      <label className="sr-only " for="inlineFormInputName2">
-        Name
-      </label>
+    <form onSubmit={search} className="form-inline ">
       <input
-        type="text"
+        type="search"
+        id="DictionaryForm"
         className="form-control form-control-lg mr-sm-2 "
-        id="inlineFormInputName2"
         placeholder="Enter a word"
+        onChange={handleKeywordChange}
       ></input>
       <button type="submit" className="btn ">
         <span className="material-symbols-outlined">search</span>
