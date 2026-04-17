@@ -56,9 +56,21 @@ video {
 .footer {
   color: #fffdfb;
   padding: 20px;
-  background-color: rgba(8, 129, 163, 0.35);
-  border-radius: 5px;
+  background-color: rgba(8, 129, 163, 0.9);
   max-width: 100%;
+}
+
+a {
+  color: #ffd6a4;
+}
+
+strong {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .word-container {
@@ -81,7 +93,7 @@ video {
 .category,
 .pronunciation {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .searched-word {
@@ -116,4 +128,93 @@ video {
 }
 .bg3 {
   background-color: rgba(255, 253, 251, 0.3);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+
+  .form-control {
+    width: 250px !important;
+  }
+
+  .searched-word {
+    font-size: 40px;
+  }
+
+  .container-mainresult {
+    margin: 10px !important;
+    width: 95%;
+    justify-self: center;
+  }
+
+  .category,
+  .pronunciation {
+    font-size: 16px;
+  }
+
+  .meaning {
+    font-size: 18px;
+  }
+
+  .extra-title {
+    font-size: 16px;
+  }
+
+  .extra-content {
+    font-size: 14px;
+  }
+
+  .word-container {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-right: 12px !important;
+    flex-direction: row !important; /* los 3 rows quedan lado a lado */
+  }
+
+  .synonyms-container,
+  .utilities-container {
+    min-height: 90px;
+  }
+
+  .synonym-list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .bg2 {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer {
+    position: relative;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  strong {
+    font-size: 16px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+  }
+
+  .extra-resultscontainer {
+    padding: 0;
+    margin-top: 5px;
+  }
 }

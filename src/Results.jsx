@@ -5,7 +5,7 @@ import ExtraResults from "./ExtraResults";
 export default function Result({ results }) {
   if (results) {
     return (
-      <div className="container mt-5">
+      <div className="container mt-5 container-mainresult">
         <div className="row mb-2">
           <div className="col-8 word-container rounded ">
             <WordResult results={results} />

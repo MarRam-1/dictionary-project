@@ -11,12 +11,13 @@ export default function ExtraResults({ results }) {
 
   const example = meaning0?.example;
 
+  console.log(results);
   return (
-    <div className="col-4 d-flex flex-column">
+    <div className="col-12 col-md-4 d-flex flex-column extra-resultscontainer">
       <div className="flex-fill synonyms-container rounded mb-2 pl-2 d-flex flex-column justify-content-center">
-        <div className="container">
+        <div className="container ">
           <div className="extra-title font-weight-bold">Synonyms</div>
-          <div className="row justify-content-around m-1">
+          <div className="row justify-content-around m-1 synonym-list">
             {synonym1 || synonym2 ? (
               <>
                 {synonym1 && (

@@ -16,7 +16,9 @@ function App() {
         <Dictionary setResults={setResults} />
       </header>
       {results && <Results results={results} />}
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

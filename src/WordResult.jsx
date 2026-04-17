@@ -6,7 +6,7 @@ export default function WordResult({ results }) {
   const definition = results.meanings?.[0]?.definition;
 
   return (
-    <div className="container py-3">
+    <div className="container py-3 ">
       <div className="main-result">
         <div className="category">noun</div>
         <div className="searched-word">{results.word}</div>
