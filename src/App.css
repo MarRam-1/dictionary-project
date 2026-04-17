@@ -1,10 +1,16 @@
 body {
   background-color: #0881a3;
+  overflow-x: hidden;
 }
 
 .App {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .App-header {
@@ -58,6 +64,10 @@ video {
   padding: 20px;
   background-color: rgba(8, 129, 163, 0.9);
   max-width: 100%;
+}
+
+footer {
+  margin-top: auto;
 }
 
 a {

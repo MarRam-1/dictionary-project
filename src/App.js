@@ -7,18 +7,17 @@ import { useState } from "react";
 
 function App() {
   let [results, setResults] = useState(null);
+  let [photos, setPhotos] = useState(null);
 
   return (
     <div className="App">
       <header className="App-header">
         <video autoPlay muted loop playsInline src={cover}></video>
         <h1>Welcome to my dictionary</h1>
-        <Dictionary setResults={setResults} />
+        <Dictionary setResults={setResults} setPhotos={setPhotos} />
       </header>
-      {results && <Results results={results} />}
-      <footer>
-        <Footer />
-      </footer>
+      {results && <Results results={results} photos={photos} />}
+      <Footer />
     </div>
   );
 }
