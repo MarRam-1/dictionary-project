@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function Dictionary() {
+export default function Dictionary({ setResults }) {
   let [keyword, setKeyword] = useState("");
 
   function handleResponse(response) {
-    console.log(response.data);
+    setResults(response.data);
   }
 
   function search(event) {

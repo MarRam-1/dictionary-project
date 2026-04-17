@@ -70,11 +70,8 @@ video {
 }
 
 .synonyms-container {
-  background-color: rgba(255, 253, 251, 0.9);
-}
-
-.antonyms-container {
   background-color: rgba(8, 129, 163, 0.9);
+  color: #ffd6a4;
 }
 
 .utilities-container {
@@ -109,10 +106,9 @@ video {
 .extra-content {
   font-size: 18px;
   text-align: center;
-}
-
-.bg1 {
-  background-color: rgba(8, 129, 163, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg2 {

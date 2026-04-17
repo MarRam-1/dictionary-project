@@ -1,24 +1,26 @@
 import React from "react";
 
-export default function WordResult() {
+export default function WordResult({ results }) {
+  if (!results) return null;
+
+  const definition = results.meanings?.[0]?.definition;
+
   return (
     <div className="container py-3">
       <div className="main-result">
         <div className="category">noun</div>
-        <div className="searched-word">wordextralarge</div>
-        <div className="pronunciation">pro*nun*cia*tion</div>
+        <div className="searched-word">{results.word}</div>
+        <div className="pronunciation">{results.phonetic}</div>
       </div>
       <div className="meanings mt-3">
         <div className="meaning1">
-          <div className="number">#1</div>
-          <div className="meaning">
-            Meaning yara meaning yara meaning yara yara.
+          <div className="number">
+            <span className="material-symbols-outlined">search_check</span>
           </div>
-        </div>
-        <div className="meaning2 mt-3">
-          <div className="number">#2</div>
           <div className="meaning">
-            Meaning yara meaning yara meaning yara yara.
+            {definition
+              ? definition.charAt(0).toUpperCase() + definition.slice(1) + "."
+              : "No definition found."}
           </div>
         </div>
       </div>
